@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090609">
+<title>إلى ورور ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+:root{--bg:#080608;--panel:#120c10;--pink:#ff9db5;--pink2:#d95d7b;--text:#f5e9ed;--muted:#bdaab1;--line:#40232d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% -10%,#32141f 0,#0a0709 42%,#050405 100%);color:var(--text);font-family:Cairo,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:43px 43px}
+.container{width:min(1000px,calc(100% - 28px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#dbaab6}.logo{font-family:"Playfair Display",serif;letter-spacing:4px}.sound{background:#100a0d;border:1px solid var(--line);color:#ffc0cd;border-radius:99px;padding:9px 15px}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative}.hero-inner{width:100%;padding:30px 0}.eyebrow{color:#d69baa;font-size:13px;letter-spacing:2px}.title{font-family:"Playfair Display",serif;color:var(--pink);font-size:clamp(55px,13vw,105px);letter-spacing:8px;margin:10px 0;text-shadow:0 0 35px #ff6f8d33}.nickname{font-size:25px;color:#ffb6c5}.intro{color:var(--muted);line-height:2;margin:10px auto 25px;max-width:450px}
+.gift{width:240px;height:205px;margin:25px auto 25px;position:relative;cursor:pointer;filter:drop-shadow(0 30px 35px #000)}.body{position:absolute;left:14px;right:14px;bottom:0;height:137px;border:2px solid #8b4658;border-radius:4px 4px 16px 16px;background:linear-gradient(145deg,#32141e,#0d080b)}.lid{position:absolute;left:0;top:25px;width:100%;height:65px;border:2px solid #9a5062;border-radius:12px;background:linear-gradient(#421a27,#180b10);transform-origin:top;transition:1s;z-index:3}.ribbon-v{position:absolute;z-index:4;left:calc(50% - 18px);top:0;width:36px;height:205px;background:linear-gradient(90deg,#6d2940,#ff9db5,#6d2940);opacity:.8}.ribbon-h{position:absolute;z-index:4;left:0;top:44px;width:100%;height:28px;background:linear-gradient(#742b43,#ff9db5,#742b43);opacity:.8}.lock{position:absolute;z-index:6;top:87px;left:calc(50% - 19px);font-size:35px;color:#ffc1ce;text-shadow:0 0 18px #ff6b91}.gift.open .lid{transform:rotateX(120deg) translateY(-8px)}.gift.open .lock{opacity:0}.cta{border:1px solid #a95169;border-radius:99px;padding:14px 28px;background:linear-gradient(90deg,#34131e,#160a0e);color:#ffd2dc;font-family:inherit;font-size:15px;box-shadow:0 0 30px #ff6c9018;cursor:pointer}
+.hidden{display:none}.show{display:block;animation:up .8s ease both}@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+section.card{background:rgba(14,9,12,.8);border:1px solid var(--line);border-radius:22px;padding:28px;margin:18px 0;box-shadow:0 20px 60px #0003}.heading{font-family:"Playfair Display",serif;color:var(--pink);font-size:28px;margin:0 0 18px}.portrait{display:block;width:min(480px,100%);margin:auto;border-radius:16px;border:1px solid #794052;box-shadow:0 20px 55px #000}
+.letter{max-width:700px;margin:auto;line-height:2.2;color:#e6d5da;font-size:17px}.letter .name{color:#ff9fb7;font-size:25px}.sign{color:#ffafc0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tile{border:1px solid #42242d;border-radius:16px;padding:22px 12px;background:#100a0d;text-align:center;cursor:pointer;transition:.25s}.tile:hover{transform:translateY(-4px);border-color:#985067}.tile b{display:block;color:#ffadbf;margin-bottom:7px}.tile span{font-size:12px;color:var(--muted)}
+.secret{text-align:center;max-width:600px;margin:auto}.secret input{width:100%;padding:14px;border-radius:12px;border:1px solid #59303b;background:#0b0709;color:#fff;text-align:center;font:inherit;outline:none}.msg{color:#ffb2c2;min-height:30px;margin-top:13px}
+footer{text-align:center;color:#78636b;padding:35px 0 55px;font-size:12px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.container{width:min(100% - 18px,1000px)}section.card{padding:21px}.hero{min-height:95vh}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="top"><div class="logo">R O W A N ♡</div><button class="sound" id="sound">♫ صوت</button></header>
+
+<main class="hero">
+<div class="hero-inner">
+<div class="eyebrow">هدية بدون مناسبة</div>
+<div class="gift" id="gift" aria-label="افتحي الهدية"><div class="lid"></div><div class="ribbon-v"></div><div class="ribbon-h"></div><div class="body"></div><div class="lock">♡</div></div>
+<h1 class="title">RAWAN</h1><div class="nickname">"ورور"</div>
+<p class="intro">بعض الهدايا ما تنشرى…<br>بعضها تنصنع بهدوء لشخص يستاهلها.</p>
+<button class="cta" id="open">افتحي هديتك ♡</button>
+</div>
+</main>
+
+<div id="giftContent" class="hidden">
+<section class="card">
+<h2 class="heading">أول شيء… صورتك</h2>
+<img class="portrait" src="rawan.jpg" alt="رسمة روان">
+<p style="text-align:center;color:var(--muted)">قلت أخلي صورتك أول شيء يظهر داخل الهدية.</p>
+</section>
+
+<section class="card">
+<h2 class="heading">رسالة لكِ</h2>
+<div class="letter"><div class="name">روان..</div>
+<p>هذه الهدية بدون مناسبة، وبدون سبب كبير. بس لأنك شخص يستاهل يكون له شيء خاص.</p>
+<p>ما أبيها تكون مجرد صورة أو رسالة عادية؛ أبي كل جزء فيها يخليك تبتسمين وأنتِ تكتشفينه.</p>
+<p>خذي وقتك… فيه أشياء صغيرة مخبّية لك تحت.</p>
+<p class="sign">— تميم ♡</p></div>
+</section>
+
+<section class="card">
+<h2 class="heading">ثلاث أشياء صغيرة</h2>
+<div class="grid">
+<div class="tile" onclick="note(0)"><b>♡ 01</b><span>اضغطي</span></div>
+<div class="tile" onclick="note(1)"><b>♡ 02</b><span>هنا شيء مخبّى</span></div>
+<div class="tile" onclick="note(2)"><b>♡ 03</b><span>آخر وحدة مختلفة</span></div>
+</div><div class="msg" id="note"></div>
+</section>
+
+<section class="card secret">
+<h2 class="heading">🔐 الجزء السري</h2>
+<p style="color:var(--muted)">اكتبي اللقب اللي أعرفك فيه…</p>
+<input id="answer" placeholder="اكتبي هنا">
+<button class="cta" style="margin-top:12px" onclick="unlock()">افتحي</button>
+<div class="msg" id="secret"></div>
+</section>
+
+<section class="card" style="text-align:center">
+<h2 class="heading">النهاية؟</h2>
+<p style="color:var(--muted);line-height:2">لا، مو النهاية…<br>اعتبريها مجرد أول صفحة من شيء جميل.</p>
+<div style="font-size:30px;color:#ff9fb7">♡</div>
+</section>
+</div>
+<footer>صُنعت بهدوء… لورور ♡</footer>
+</div>
+
+<script>
+const gift=document.getElementById('gift'),open=document.getElementById('open'),content=document.getElementById('giftContent');
+function start(){if(content.classList.contains('show'))return;gift.classList.add('open');open.textContent='انفتحت الهدية ♡';content.className='show';setTimeout(()=>content.scrollIntoView({behavior:'smooth'}),700)}
+gift.onclick=start;open.onclick=start;
+const notes=[
+'مو لازم يكون فيه مناسبة عشان أحد يسوي لك شيء من قلبه.',
+'وجود بعض الأشخاص لحاله سبب كفاية للفرح.',
+'إذا ابتسمتي الآن، خلاص… الهدية أدت مهمتها ♡'
+];
+function note(i){document.getElementById('note').textContent=notes[i]}
+function unlock(){let v=document.getElementById('answer').value.trim().toLowerCase();document.getElementById('secret').textContent=(v.includes('ورور')||v.includes('روان')||v.includes('rawan'))?'عرفتكِ ♡ هذه الرسالة ما تنفتح إلا لك: أتمنى تظل ابتسامتك موجودة دائمًا.':'مو هذا… جربي اللقب اللي ينقال لك ♡'}
+document.getElementById('sound').onclick=()=>alert('إذا عندك أغنية معينة تبغى نضيفها، نقدر نربطها هنا في النسخة القادمة ♡');
+</script>
+</body>
+</html>
